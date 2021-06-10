@@ -1,6 +1,5 @@
 package ru.geekbrains.lesson8;
 
-
 class Human {
     private final char DOT;
 

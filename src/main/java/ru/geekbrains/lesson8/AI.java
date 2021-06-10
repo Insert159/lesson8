@@ -1,6 +1,5 @@
 package ru.geekbrains.lesson8;
 
-
 import java.util.*;
 
 class AI {
