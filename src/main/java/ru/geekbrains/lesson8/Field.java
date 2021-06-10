@@ -48,7 +48,6 @@ class Field {
         if (checkWin(AI_DOT))
             gameOverMsg = MSG_AI_WON;
     }
-
     boolean isMapFull() {
         for (int i = 0; i < FIELD_SIZE; i++)
             for (int j = 0; j < FIELD_SIZE; j++)
