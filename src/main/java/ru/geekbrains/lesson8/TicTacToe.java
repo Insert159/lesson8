@@ -28,7 +28,7 @@ import java.awt.event.*;
             setTitle(TITLE_OF_PROGRAM);
             setDefaultCloseOperation(EXIT_ON_CLOSE);
             setSize(WINDOW_SIZE + WINDOW_DX, WINDOW_SIZE + WINDOW_DY);
-            setLocationRelativeTo(null); // to the center
+            setLocationRelativeTo(null);
             setResizable(false);
 
             panel.setBackground(Color.white);
@@ -64,13 +64,13 @@ import java.awt.event.*;
             panelBtn.add(init);
             panelBtn.add(exit);
 
-            setLayout(new BorderLayout()); 
+            setLayout(new BorderLayout());
             add(panelBtn, BorderLayout.SOUTH);
             add(panel, BorderLayout.CENTER);
             setVisible(true);
         }
 
-        class Panel extends JPanel { // for painting
+        class Panel extends JPanel {
             @Override
             public void paint(Graphics g) {
                 super.paint(g);

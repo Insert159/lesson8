@@ -39,7 +39,7 @@ class Field {
 
     String getGameOverMsg() { return gameOverMsg; }
 
-    void setDot(int x, int y, char dot) { // set dot and check fill and win
+    void setDot(int x, int y, char dot) {
         map[x][y] = dot;
         if (isMapFull())
             gameOverMsg = MSG_DRAW;
@@ -81,7 +81,7 @@ class Field {
             g.drawLine(0, i*CELL_SIZE, FIELD_SIZE*CELL_SIZE, i*CELL_SIZE);
             g.drawLine(i*CELL_SIZE, 0, i*CELL_SIZE, FIELD_SIZE*CELL_SIZE);
         }
-        Graphics2D g2 = (Graphics2D) g; // use Graphics2D
+        Graphics2D g2 = (Graphics2D) g;
         g2.setStroke(new BasicStroke(5));
         for (int y = 0; y < FIELD_SIZE; y++) {
             for (int x = 0; x < FIELD_SIZE; x++) {
